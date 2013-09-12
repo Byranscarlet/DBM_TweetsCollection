@@ -35,15 +35,6 @@ public final class getURL {
     		StatusListener listener = new StatusListener() {
     		  
     		  
-	    		//URL filter  	
-	      		String url1 = "n.pr";
-	      		String url2 = "huff.to";
-	      		String url3 = "npr.org";
-	      		String url4 = "huffingtonpost.com";
-	      		String url_tmp = null;
-	      		
-	    		
-	    		
 		        long twitterid;
 		        String URL;
 		        URLEntity[] URLObject;
@@ -72,12 +63,6 @@ public final class getURL {
 	            	
 	                URLObject = status.getURLEntities();               	
 	            	
-	                for (URLEntity i : URLObject) {
-	                
-	                	url_tmp = i.getExpandedURL().toLowerCase();
-	                	
-	                	
-	                	if (url_tmp == url1 | url_tmp == url2 | url_tmp == url3 | url_tmp == url4) {
 	                		
 	                		
 	                		//insert query need to be added
@@ -120,9 +105,7 @@ public final class getURL {
 							System.out.println(status.getSource());
 		                	System.out.println(Hashtag[0].getText());
 		                
-	                	}
-	                	
-	                }
+
 	
 	            }
 	
