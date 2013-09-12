@@ -156,11 +156,12 @@ public final class getURL {
 
 	        
     		};
-        
+        	
+     		string[] trackString = {"n,pr","npr,org","huff,to","huffington,com"}
+        	
 	        twitterStream.addListener(listener);
 	        FilterQuery filter2 = new FilterQuery();
-	        long[] userid = {602607781,1697640434};
-	        filter2.follow(userid);
+		filter2.track(trackString);
 	        twitterStream.filter(filter2);
 
 	        
