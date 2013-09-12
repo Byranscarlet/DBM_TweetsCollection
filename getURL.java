@@ -74,10 +74,10 @@ public final class getURL {
 	            	
 	                for (URLEntity i : URLObject) {
 	                
-	                	url_tmp = i.getExpandedURL().toLowerCase();
+	                	url_tmp = i.getExpandedURL()!=null?i.getExpandedURL().toLowerCase():"";
 	                	
 	                	
-	                	if (url_tmp == url1 || url_tmp == url2 || url_tmp == url3 || url_tmp == url4) {
+	                	if (url_tmp.contains(url1) || url_tmp.contains(url2) || url_tmp.contains(url3) || url_tmp.contains(url4)) {
 	                		
 	                		
 	                		//insert query need to be added
