@@ -77,7 +77,7 @@ public final class getURL {
 	                	url_tmp = i.getExpandedURL().toLowerCase();
 	                	
 	                	
-	                	if (url_tmp == url1 | url_tmp == url2 | url_tmp == url3 | url_tmp == url4) {
+	                	if (url_tmp == url1 || url_tmp == url2 || url_tmp == url3 || url_tmp == url4) {
 	                		
 	                		
 	                		//insert query need to be added
